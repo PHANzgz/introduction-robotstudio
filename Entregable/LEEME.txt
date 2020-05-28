@@ -1,0 +1,8 @@
+Para visualizar el documento, se recomienda abrir el archivo online mediante el siguiente enlace:
+https://nbviewer.jupyter.org/github/PHANzgz/introduction-robotstudio/blob/master/RobotStudio.ipynb
+
+De forma alternativa, para una version offline se puede abrir el archivo RobotStudio.html sin moverlo de la carpeta memoria,
+para que pueda acceder a las imágenes.
+
+Sin embargo, tambien se encuentra el archivo FormatoAlternativo.pdf dentro de la carpeta de memoria, aunque no es recomendado
+visualizar el trabajo alli por temas de formateado(al pasar de html a pdf se deforman ciertas partes).
