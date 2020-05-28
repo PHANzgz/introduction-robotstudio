@@ -13296,7 +13296,7 @@ Verifiquemos con MATLAB:
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">matlab_magic</span> eng
 
-Q1 = eul2quat([0 0 pi/2], &#39;XYZ&#39;)
+Q1 = eul2quat([0 pi/2 0], &#39;XYZ&#39;)
 
 R = [0 1 0; 1 0 0; 0 0 -1];
 Q2 = rotm2quat(R)
@@ -13317,7 +13317,7 @@ Q2 = rotm2quat(R)
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Q1 =
-    0.7071         0         0    0.7071
+    0.7071         0    0.7071         0
 Q2 =
          0    0.7071    0.7071         0
 
@@ -13338,7 +13338,7 @@ Q2 =
 Con los datos obtenidos podemos definir ambas herramientas en RAPID:
 <br><br></p>
 <p><p style = "text-indent : 2em;">
-    <code> PERS tooldata puntero1 := [ TRUE, [[0, 0, 105], [0.707, 0, 0, 0.707]], [0.14, [0, 0, 20], [1, 0, 0, 0], 4.66e-6, 4.66e-6, 0]];</code>
+    <code> PERS tooldata puntero1 := [ TRUE, [[0, 0, 105], [0.707, 0, 0.707, 0]], [0.14, [0, 0, 20], [1, 0, 0, 0], 4.66e-6, 4.66e-6, 0]];</code>
 </p></p>
 <p><p style = "text-indent : 2em;">
     <code> PERS tooldata puntero2 := [ TRUE, [[0, 0, 105], [0, 0.707, 0.707, 0]], [0.14, [0, 0, 20], [1, 0, 0, 0], 4.66e-6, 4.66e-6, 0]];</code>
